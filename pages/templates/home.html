@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Accueil{% endblock %}
+{% block content %}
+
+<section class="max-w-5xl mx-auto px-4 py-16">
+  <!-- Slider container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-full"
+                  src="https://www.youtube.com/embed/PzcumXlupm0?controls=0&si=Mb-mAMu-FiEq5mpG"
+                  title="Video 1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-full"
+                  src="https://www.youtube.com/embed/ZtXJk0QAqyU?controls=0&si=IN8ny5TtEd6nLakm"
+                  title="Video 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-full"
+                  src="https://www.youtube.com/embed/qtL4vq4_HDU?controls=0&si=_Y75V55KXh_dSxyw"
+                  title="Video 3" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div> <!-- fin swiper-wrapper -->
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div> <!-- fin swiper -->
+</section>
+
+<!-- Section photo + texte -->
+<section class="bg-[#FADF8F] py-16">
+  <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+    <!-- Image -->
+    <div class="flex-1">
+      <img src="{% static 'img/photo-presentation.png' %}" 
+           alt="Présentation Jim Com" 
+           class="rounded-lg shadow-lg">
+    </div>
+    <!-- Texte -->
+    <div class="flex-1">
+      <h2 class="text-3xl font-bold mb-4 text-[#DE5CFF]">À propos de Jim Com</h2>
+      <p class="mb-4">Ici j'écris ce que je fais, et le but du site etc.</p>
+      <p class="mb-4">Ici j'écris ce que je fais, et le but du site etc.</p>
+      <p class="mb-4">Ici j'écris ce que je fais, et le but du site etc.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Capsules TikTok compact -->
+<section class="max-w-5xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold mb-6 text-[#DE5CFF]">Mes capsules</h2>
+  <div class="flex gap-5 overflow-x-auto pb-2 snap-x snap-mandatory">
+    <!-- Capsule -->
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7535140932748856581" data-video-id="7535140932748856581" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="gaza" target="_blank" href="https://www.tiktok.com/tag/gaza?refer=embed">#gaza</a> <a title="muezzin" target="_blank" href="https://www.tiktok.com/tag/muezzin?refer=embed">#muezzin</a> <a title="appelalapriere" target="_blank" href="https://www.tiktok.com/tag/appelalapriere?refer=embed">#appelalapriere</a> <a title="famine" target="_blank" href="https://www.tiktok.com/tag/famine?refer=embed">#famine</a> <a title="conscience" target="_blank" href="https://www.tiktok.com/tag/conscience?refer=embed">#conscience</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7535140957273082630?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7533354743041740088" data-video-id="7533354743041740088" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="marrakech" target="_blank" href="https://www.tiktok.com/tag/marrakech?refer=embed">#marrakech</a> <a title="gueliz" target="_blank" href="https://www.tiktok.com/tag/gueliz?refer=embed">#gueliz</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7533354766933904134?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7533310775230745862" data-video-id="7533310775230745862" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="mercosur" target="_blank" href="https://www.tiktok.com/tag/mercosur?refer=embed">#mercosur</a> <a title="mnc" target="_blank" href="https://www.tiktok.com/tag/mnc?refer=embed">#mnc</a> <a title="abattage" target="_blank" href="https://www.tiktok.com/tag/abattage?refer=embed">#abattage</a> <a title="bovins" target="_blank" href="https://www.tiktok.com/tag/bovins?refer=embed">#bovins</a> <a title="vaccinsarnm" target="_blank" href="https://www.tiktok.com/tag/vaccinsarnm?refer=embed">#vaccinsarnm</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7533310781234252550?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7533268515642543366" data-video-id="7533268515642543366" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="jwallet" target="_blank" href="https://www.tiktok.com/tag/jwallet?refer=embed">#jwallet</a> <a title="banque" target="_blank" href="https://www.tiktok.com/tag/banque?refer=embed">#banque</a> <a title="decentralise" target="_blank" href="https://www.tiktok.com/tag/decentralise?refer=embed">#decentralise</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7533268653286886200?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7532921018306874629" data-video-id="7532921018306874629" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="trump" target="_blank" href="https://www.tiktok.com/tag/trump?refer=embed">#trump</a> <a title="vonderleyen" target="_blank" href="https://www.tiktok.com/tag/vonderleyen?refer=embed">#vonderleyen</a> <a title="accord" target="_blank" href="https://www.tiktok.com/tag/accord?refer=embed">#accord</a> <a title="taxes" target="_blank" href="https://www.tiktok.com/tag/taxes?refer=embed">#taxes</a> <a title="goldmansachs" target="_blank" href="https://www.tiktok.com/tag/goldmansachs?refer=embed">#goldmansachs</a> <a title="blackrock" target="_blank" href="https://www.tiktok.com/tag/blackrock?refer=embed">#blackrock</a> <a title="pillage" target="_blank" href="https://www.tiktok.com/tag/pillage?refer=embed">#pillage</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7532921043435080453?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 snap-start">
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jimleveilleurofficiel/video/7532274140640709894" data-video-id="7532274140640709894" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@jimleveilleurofficiel" href="https://www.tiktok.com/@jimleveilleurofficiel?refer=embed">@jimleveilleurofficiel</a> <a title="whatsapp" target="_blank" href="https://www.tiktok.com/tag/whatsapp?refer=embed">#whatsapp</a> <a title="uupanonymous" target="_blank" href="https://www.tiktok.com/tag/uupanonymous?refer=embed">#uupanonymous</a> <a title="meta" target="_blank" href="https://www.tiktok.com/tag/meta?refer=embed">#meta</a> <a title="deepstate" target="_blank" href="https://www.tiktok.com/tag/deepstate?refer=embed">#deepstate</a> <a title="surveillancedemasse" target="_blank" href="https://www.tiktok.com/tag/surveillancedemasse?refer=embed">#surveillancedemasse</a> <a target="_blank" title="♬ son original - Jim leveilleur" href="https://www.tiktok.com/music/son-original-7532274108685896504?refer=embed">♬ son original - Jim leveilleur</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Produits -->
+<section class="max-w-5xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold mb-8 text-[#DE5CFF]">Mes produits</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Produit 1 -->
+    <div class="border rounded-lg p-4 shadow-md">
+      <img src="{% static 'img/cure.png' %}" alt="Produit 1"
+           class="w-full h-50 object-cover rounded-lg mb-4">
+      <h3 class="font-semibold mb-2">Cure métabolique</h3>
+      <p>La cure métabolique est un programme sur-mesure qui utilise votre bilan sanguin pour réinitialiser votre métabolisme. Adieu les régimes restrictifs, bonjour la perte de poids durable et une énergie retrouvée.</p>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="border rounded-lg p-4 shadow-md">
+      <img src="{% static 'img/formation.png' %}" alt="Produit 2"
+           class="w-full h-50 object-cover rounded-lg mb-4">
+      <h3 class="font-semibold mb-2">Formation médécine chinoise</h3>
+      <p>Maîtrisez les principes de la médecine chinoise pour devenir un expert de la santé holistique. Nos formations vous donnent les clés pour rétablir l'harmonie et l'équilibre énergétique, loin des approches conventionnelles.</p>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="border rounded-lg p-4 shadow-md">
+      <img src="{% static 'img/musique.png' %}" alt="Produit 3"
+           class="w-full h-50 object-cover rounded-lg mb-4">
+      <h3 class="font-semibold mb-2">Créations musicales</h3>
+      <p>Plongez dans un univers sonore conçu pour toucher l'âme. Mes créations musicales sont des mélodies qui résonnent avec vos émotions, offrant une expérience auditive inoubliable, directement au cœur.</p>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="border rounded-lg p-4 shadow-md">
+      <img src="{% static 'img/miel.png' %}" alt="Produit 4"
+           class="w-full h-50 object-cover rounded-lg mb-4">
+      <h3 class="font-semibold mb-2">Miel</h3>
+      <p>Un miel pur, récolté avec passion pour sublimer vos sens. Chaque goutte est un voyage au cœur de la nature, une douceur exquise qui éveille vos papilles et régale votre corps.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Call to action -->
+<section class="bg-[#FADF8F] py-12">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-[#DE5CFF]">Intéressé par mes services ?</h2>
+    <p class="mb-6">Contactez-moi dès aujourd'hui pour discuter de vos besoins.</p>
+    <a href="/contact/" class="inline-block bg-[#DE5CFF] text-white px-6 py-3 rounded-lg shadow hover:opacity-90 transition">
+      Contactez-moi
+    </a>
+  </div>
+</section>
+
+
+{% endblock %}

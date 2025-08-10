@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Jim Leveilleur{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <meta name="description" content="{% block meta_desc %}Présentation et contact{% endblock %}">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="border-b">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center space-x-3">
+          <img src="{% static 'img/logo.png' %}" alt="Jim Com" class="h-10 w-auto">
+          <span class="font-semibold text-xl">JIM LEVEILLEUR</span>
+        </a>
+        <nav class="space-x-4">
+          <a href="/" class="hover:underline">Accueil</a>
+          <a href="/a-propos/" class="hover:underline">À propos</a>
+          <a href="/contact/" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="border-t">
+      <div class="max-w-5xl mx-auto px-4 py-6 text-sm text-gray-500">
+        © {% now "Y" %} — Tous droits réservés
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+</script>
